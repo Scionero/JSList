@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Maker</title>
+
+    <link rel="stylesheet" href="jslist.css">
+    <script src="jslist.js"></script>
+</head>
+<body>
+    <h1>Maker</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>Add word</h2>
+            <form name="form">
+                Word to list: <input type="text" name="word" value=""><br />
+                List 1 or 2?: <input type="number" name="number" value=""><br /><br />
+                <input type="button" value="Add to list" onclick="valAdd()">
+            </form>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>List 1</h2>
+            <table id="list1">
+            </table>
+            <br /> <br />
+            <input type="button" value="Clear the list" onclick="clearList1()">
+        </div>
+        <div class="myflexboxColumn">
+            <h2>List 2</h2>
+            <table id="list2">
+            </table>
+            <br /> <br />
+            <input type="button" value="Clear the list" onclick="clearList2()">
+        </div>
+    </div>    
+</body>
+</html>
